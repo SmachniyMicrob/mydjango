@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head class="head">
+        <title>Полянский Даниил Дмитриевич</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'aboutme.css' %}">
+    </head>
+
+    <body style="background-image:url('{% static 'repeat.jpg' %)'); background-repeat: repeat; background-size: 100%">
+        <div class="wrapper">
+            <ul class="nav">
+                <li><a href="Обо мне.html">Обо Мне</a></li>
+                <li><a href="Учеба.html">Учеба</a></li>
+                <li><a href="Отдых.html">Отдых</a></li>
+            </ul>
+            <div>
+                <img src="{% static 'муу.jpg' %}" class="image">
+                <p class="image_text">Полянский Даниил Дмитриевич</p>
+            </div>
+
+            <section class="margin">
+                <main class="main">
+                    <h2 class="header_1_1">Биография</h2>
+                    <section class="content_1_1">
+                        <p class="p">Дата рождения - 20.11.2003</p>
+                        <p class="p">Место Учебы - МБОУ СОШ №99</p>
+                        <p class="p">Буква класса - "Б"</p>
+                        <p class="p">Год окончания - 2021</p>
+                    </section>
+
+                    <h2 class="header_1_2">Увлечения</h2>
+                    <section class="content_1_2">
+                        <li class="li">Настольный теннис</li>
+                        <li class="li">Музыка</li>
+                        <li class="li">Плавание</li>
+                    </section>
+
+                    <h2 class="header_1_3">Любимые цитаты из книг</h2>
+                    <section class="content_1_3">
+                        <section class="pretitle">
+                            <h3 class="bold">Вадим Зеланд - "Трансерфинг реальности":</h3>
+                            <h3 class="bold">Чарли Хуперт - "Искусство Харизмы":</h3>
+                            <h3 class="bold">Тони Роббинс - "Личная Власть":</h3>
+                        </section>
+                        <section class="podtext">
+                            <p class="p2"><q>Не цель достигается с помощью денег, а деньги приходят на пути к цели...</q></p>
+                            <p class="p2"><q>Надо сиять, когда что-то рассказываешь!</q></p>
+                            <p class="p2"><q>Тот, кто добивается успеха, постоянно меняет стратегию, пока не достигнет желаемого.</q></p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h2 class="header_1_4">Успеваемость</h2>
+                        <table width="1250" cellspacing="1" border="1.2" class="table">
+                            <tr>
+                            <th bgcolor = "#00d4ff" align="center" >Предмет</th>
+                            <th bgcolor = "#00d4ff" >Семестр</th>
+                            <th bgcolor = "#00d4ff" >Оценка</th>
+                            </tr>
+                            <tr>
+                            <td>Информационные угрозы</td> <td rowspan="3" align="center"> 1 </td> <td align="center" > 4 </td>
+                            </tr>
+                            <tr>
+                            <td>Математика</td>  <td align="center"> 4 </td>
+                            </tr>
+                            <tr>
+                            <td>Основы управления проектами</td>  <td align="center" > 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Технологии и методы программирования</td> <td rowspan="4" align="center"> 2 </td> <td align="center"> 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Основы информатики, организации ЭВМ, вычислительных и информационных систем</td>  <td align="center"> 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Классификация защищаемой информации и информационных систем </td>  <td align="center"> 4 </td>
+                            </tr>
+                            <tr>
+                            <td> История (история России, всеобщая история) </td>  <td align="center"> 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Физика</td> <td rowspan="3" align="center"> 3 </td> <td align="center"> 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Основы информационной безопасности</td>  <td align="center"> 5 </td>
+                            </tr>
+                            <tr>
+                            <td>Нормативные требования по защите информации</td>  <td align="center"> 5 </td>
+                            </tr>
+                        </table>
+                        <p class="endspace">О</p>
+                    </section>
+                </main>
+            </section>
+            <footer class="footer">
+                <div class="footer-text">
+                    <li><a href="mailto:daniil000555@gmail.com" target="_blank">Почта</a></li>
+                </div>
+                <div class="footer-text">
+                    <li><a href="tel: +89234975775" target="_blank">Телефон</a></li>
+                </div>
+                <div class="footer-text">
+                    <li><a href="https://t.me/LostCryppi" target="_blank">Телеграм</a></li>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

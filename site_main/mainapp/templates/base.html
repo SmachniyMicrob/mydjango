@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мое приложение: {{title}}</title>
+</head>
+<body>
+    {% include 'user_block.html' %}
+    {% block page_title %}
+        <h1>Заменяемый заголовок</h1>
+    {% endblock %}
+
+    {%block page_content %}
+        <p>Заменяемое содержимое</p>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello from Django</title>
+</head>
+
+<body>
+    {% include 'user_block.html' %}
+    <h1>Изучаем Django</h1>
+    <p>Привет ИБс-211</p>
+    <br>
+    <a href="{% url 'products' %}">Продукты</a>
+    <a href="{% url 'dishes' %}">Блюда</a>
+</body>
+</html>

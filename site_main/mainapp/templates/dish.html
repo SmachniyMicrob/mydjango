@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+    <h1>Состав блюда: {{dish.name}}</h1>
+{% endblock %}
+
+{%block page_content %}
+    <table>
+        {% for st in dish.recipe_set.all %}
+            <tr>
+                <td>{{st.product.name}}</td>
+                <td>{{st.product_type}}</td>
+                <td>{{st.quantity}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="#">Изменить блюдо</a>
+{% endblock %}

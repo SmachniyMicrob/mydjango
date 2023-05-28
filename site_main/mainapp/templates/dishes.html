@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+    <h1>Список блюд</h1>
+{% endblock %}
+
+{% block page_content %}
+    <table>
+        {% for d in dishes %}
+            <tr>
+                <td><a href="{% url 'dish' d.id %}">{{d.name}}</a></td>
+                <td><a href="#">Изменить</a></td>
+                <td><a href="#">Удалить</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="#">Добавить продукт</a>
+{% endblock %}

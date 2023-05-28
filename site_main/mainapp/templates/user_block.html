@@ -1,0 +1,9 @@
+<div>
+    {% if request.user.is_authenticated %}
+        Вы вошли под именем: <strong>{{request.user.username}}</strong>
+        <button type="button" onclick="location.href={% url 'logout' %};">Выход</button>
+    {% else %}
+        <button type="button" onclick="location.href={% url 'register' %};">Зарегистрироваться</button>
+        <button type="button" onclick="location.href={% url 'login' %};">Войти</button>
+    {% endif %}
+</div>
